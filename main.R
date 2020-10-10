@@ -21,7 +21,7 @@ require(lubridate)
 require(latex2exp)
 require(scales)
 require(cowplot)
-
+require(MASS)
 ########################################################################
 ## define the parameters to use (these were the ones used in the paper)
 
@@ -43,22 +43,22 @@ dead <- readRDS(fn)
 ## using poisson regression (Eq.~2 in the paper). This might take a little
 ## while but not more than a couple of minutes. 
 
-source("estimateRates.R")
+source("estimateRatesPub.R")
 
 #####################################################################
 ## Next we can make the figures. 
 
 ## figure 1
-source("figure1.R")
+source("figure1_pub.R")
 
 ## figure 2
-source("figure2.R")
+source("figure2_pub.R")
 
 ## figure 3
-source("figure3.R")
+source("figure3_pub.R")
 
 ## figure 4, this takes a while (many minutes) since the intergrals in Eq. 5 + 6 are solved numerically.
 ## (this code could very likely be made considerably faster by using a more clever numerical integration routine)
 
-source("figure4.R")
+source("figure4_pub.R")
 

@@ -16,7 +16,21 @@ for (i in 1:length(dsplit)){
 byearList <- unlist(byearList)
 
 
-source("confintRR.R")
+## define a funciton to estimate confidence intervals
+## a more correct version where the CIs are based on samples from a multiviarate normal
+hconfintMult <- function(fit){
+    N <- 100000
+    p <- summary(fit)$coefficients
+    co <- vcov(fit)
+    ra <- mvrnorm(N,p[2:4,1],co[2:4,2:4])
+    c <- ra[,2]
+    s <- ra[,3]
+    amp <- sqrt(c**2+s**2)
+    h <- exp(2*amp-ra[,1]*182.625)
+    ci <- quantile(h,c(0.025,0.975))
+    return(ci)
+}
+
 
 ## allocate some output lists
 opow <- list()
