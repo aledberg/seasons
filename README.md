@@ -35,7 +35,7 @@ The code is organized in a set of R-scripts as follows:
 
 **Example:**
 
-To generate Figure 4 do the following: 
+To generate the figures do the following: 
 
 * clone the repository (git clone https://github.com/aledberg/seasons)
 
