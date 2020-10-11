@@ -1,6 +1,6 @@
 # seasons
 
-Data and R-code related to the manuscript _A large decrease in the magnitude of seasonal fluctuations in mortality among elderly explains part of the increase in longevity in Sweden during 20th century_ [available here](https://www.medrxiv.org/content/10.1101/2020.04.10.20060780v2)
+Data and R-code related to the manuscript _A large decrease in the magnitude of seasonal fluctuations in mortality among elderly explains part of the increase in longevity in Sweden during 20th century_ [available here](https://www.medrxiv.org/content/10.1101/2020.04.10.20060780v3)
 
 ---
 
